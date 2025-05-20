@@ -1,0 +1,7 @@
+Build Docker Image:
+docker build -t url-shortener .  
+
+Deploy to GCP computer engine
+gcloud compute instances create-with-container url-shortener \  
+--container-image url-shortener
+
